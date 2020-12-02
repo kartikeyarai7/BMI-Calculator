@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="jumbotron bg-dark text-light">
+        <h2>Staying fit has never been easier</h2>
+        <p>Find out your bmi and check if you are fit or not</p>
+    </div>
+        
+    <div class="container">
+        <form action="#">
+
+            <div class="form-group">
+                <label for="age">Enter your age</label>
+                <input type="text" id="age" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="gen">Choose your gender</label>
+                <select name="Gender" id="gen" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Enter your weight (in Kg)</label>
+                <input type="text" id="weight" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="level">Enter your height (in M)</label>
+                <input type="text" id="level" class="form-control" required>
+            </div>
+    </div>
+    </form>
+    <div class="container">
+        <button class="btn btn-primary">Submit</button>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <div class="res btn btn-warning">
+            <h4>Your BMI is: <span class="bmi"></span></h4>
+        </div>
+    </div>
+    
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
